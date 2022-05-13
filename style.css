@@ -1,18 +1,46 @@
-html {background-color: royalblue}
-*{
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.grid-container>div {
+    text-align: center;
+    font-size: 30px;
+}
+
+html {
+    height: 100%;
+    background-color: royalblue;
+    /* for browsers that don't support gradient */
+    background-image: linear-gradient(to bottom right, royalblue, darkblue);
+}
+
+* {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Candara, Tahoma, sans-serif;
 }
-p{
+
+p {
     text-align: center;
     font-size: 18px;
     color: white;
 }
-h2{
+
+h1 {
     text-align: center;
     color: white;
     font-weight: 500;
     font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 23px;
 }
